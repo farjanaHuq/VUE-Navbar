@@ -9,7 +9,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#">Codex <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -57,10 +57,31 @@
                       <a class="dropdown-item" href="#">Wallet 2 </a>
                   </div>
                 </li>
-                <li style="color:gray font-weight:light padding-right: 2px"> | </li>
-                
-                <li class="nav-item"><a class="nav-link" href="#"> <i class="fa fa-cog" ></i></a>
-                   
+                <li style="color:gray font-weight:light padding-right: 2px"> | </li> 
+
+                 <li class="dropdown">
+                  <a class="dropdown" role="button" data-toggle="dropdown">
+                  <i class="fa fa-cog"></i></a>
+                  <div class="dropdown-menu" id="settings-layout" style="">
+                      <div id="setting-layout-inside">
+                            <div class="row" id="div-divider">
+                                   <div class="col-sm-6" style="font-size:13px">Light</div>
+                                   <div class="col-sm-6 text-right"><i class="fa fa-toggle-on" aria-hidden="true" style="color:blue; height:24px; width:16px"></i></div>
+                            </div>
+                            <div class="row">
+                                   <div class="col-sm-10" style="font-size:13px; color:#6C757D;border-top:53px; margin-top:16px">Layout Settings</div>
+                                     
+                                   <div class="col-sm-2 text-right"><i class="fa fa-columns" style="color:#6C757D; margin-top:16px" aria-hidden="true"></i></div>
+                            </div>
+
+                            <div class="row" id="layout-edit" style="font-size:13px; height:20px; widhth:62px; font-weight:light; margin-left:9px; margin-top 10.67px;">
+                                      <div class="nav-item"> <i class="fa fa-pencil-square-o" aria-hidden="true" style="margin-right:8px width:16px; height: 14.22px"></i>Edit Layout</div>        
+                            </div>
+                             <div class="row" id="layout-default" style="font-size:13px; height:20px; widhth:62px; font-weight:light; margin-left:9px; margin-top:19.11px;">
+                                      <div class="nav-item"><i class="fa fa-repeat" aria-hidden="true" style="width:16px; height: 16px"></i>Default Layout</div>        
+                            </div>
+                      </div>
+                  </div>
                 </li>
               </ul> 
             </div>       
@@ -89,8 +110,9 @@ body {
   color: #000;
   font-weight: bold;
 }
+
 .navbar{
-     max-width: 90%;
+     max-width: 1440px;
      max-height:80px;
      margin: 20px;
      color: #000;
@@ -115,16 +137,27 @@ body {
   font-size: 15px;
   font-family: inherit;
 }
-.btn:focus {
-  outline: none;
+
+#settings-layout{
+  height: 169px; 
+  width: 167px
 }
-.btn:active {
-  transform: scale(0.98);
+
+#setting-layout-inside{
+  height: 135px; 
+  width: 137px; 
+  margin-top: 16px; 
+  margin-left:14px; 
+  margin-right:16px; 
+  /* border: 1px solid;
+  border-top: 12px, solid; */
+
 }
-.btn-block {
-  display: block;
-  width: 100%;
+#div-divider{
+  height: 36px;
+  border-bottom: 1px solid black;
 }
+
 </style>
 
 
